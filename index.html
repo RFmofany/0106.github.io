@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        sbw
+    </title>
+</head>
+<body>
+    <!--标题标签（h1,h2,h3,h4,h5,h6）字体大小不同，可通过css修改-->
+    <h1>
+        标题
+    </h1>
+    <hr />
+    <!--段落标签(p)-->
+    <p>
+        ：（
+    </p>
+    <br />
+    <del>
+        删除线
+    </del>
+    <br />
+    <ins>
+        下划线
+    </ins>
+    <br />
+    <!--图片标签(src：图片路径，alt：图片无法显示时的替换文字，title:鼠标悬停时的标题，weith:图片宽度，height:图片高度，可以自适应)-->
+    <img src="./pic/dog.png" alt="dog" title="this is a dog" />
+    <br />
+    <!--音频标签( controls：播放控件，autoplay:自动播放（有些浏览器不支持)，loop：循环播放-->
+    <audio src="./music/phone.mp3" controls="controls" autoplay loop>
+    </audio>
+    <br />
+    <!--视频标签（属性与音频一直）-->
+    <!--<video src="" controls="controls"></video>-->
+    <br />
+    <!--链接标签-->
+    <a href="http://www.bilibili.com" target="_blank">B站</a>
+    <br />
+    <!--列表标签（有序列表，无序列表，自定义列表）-->
+    <!--无序列表-->
+    <ul>
+        <li>这</li>
+        <li>是</li>
+        <li>无</li>
+        <li>序</li>
+        <li>列</li>
+        <li>表</li>
+    </ul>
+    <br />
+    <!--有序列表-->
+    <ol>
+        <li>这</li>
+        <li>是</li>
+        <li>有</li>
+        <li>序</li>
+        <li>列</li>
+        <li>表</li>
+    </ol>
+    <br />
+    <!--自定义列表-->
+    <dl>
+        <dt>
+            这是自定义列表的标题
+        </dt>
+        <br />
+        <dd>这是自定义列表的第一个标签</dd>
+        <dd>这是自定义列表的第二个标签</dd>
+    </dl>
+    <br />  
+    <!--表格标签(table是表格体，tr是行，td是行里的东西)-->
+    <table>
+        <tr>
+            <td>第一行第一个</td>
+            <td>第一行第二个</td>
+        </tr>
+        <tr>
+            <td>第二行第一个</td>
+            <td>第二行第二个</td>
+        </tr>
+    </table>
+    <!--表单标签-->
+    <!--1.input type系列标签-->
+    <!--input text 用于输入单行文本-->
+        <!--placeholder占位符，提醒用户输入的内容-->
+    <!--input password用于输入密码-->
+        <!--name用于分组，checked默认选中-->
+    <!--input radio用于多选一-->
+    <!--input checkbox用于多选多-->
+    <!--input file文件选择，用于上传文件-->
+        <!--multiple多文件选择-->
+    <!--以下type需要表单域标签（form）-->
+    <!--input submit提交按钮，用于提交-->
+    <!--input reset重置按钮，用于重置-->
+    <!--input button普通按钮，与js结合实现功能-->
+    <h6>以下是input标签的各种type</h6>
+    <hr />
+    <form  method="post">
+        文本输入框:<input type="text" name="" value="" placeholder="输入文本" />
+        <br />
+        密码输入框:<input type="password" />
+        <br />
+        单选框:<input type="radio" name="name" value="" />1<input type="radio" name="name" value="" />2
+        <br />
+        多选框:<input type="checkbox" name="name" value="" />1<input type="checkbox" name="name" value="" />2
+        <br />
+        <input type="file" name="name" value="" />
+        <br /> 
+        <input type="submit" name="name" value="提交" />
+        <br />
+        <input type="reset" name="name" value="重置" />
+    </form>
+    <hr />  
+    <!--select下拉菜单标签-->
+        <!--select,下拉菜单的整体-->
+        <!--option标签，下拉菜单的每一项-->
+        <!--属性，selected,下拉菜单的默认选中-->
+    这是下拉菜单:<select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <hr />
+    <!--textarea文本域标签（cols,规定文本域的可见宽度。rows,规定文本域内可见行数）-->
+    这是文本域:<textarea>
+                这是文本域
+               </textarea>
+    <!--label标签，使在用input标签的选择属性时，可以点字进行选中-->
+
+</body>
+</html>
