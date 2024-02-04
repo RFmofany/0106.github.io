@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <title>Sbw</title>
     <style>
         .center {
@@ -9,12 +9,16 @@
         }
 
         p {
-            color: green;
-            font-size: 50px;
+            color: deeppink;
+            font-size: 100px;
         }
 
         body {
-            background-color: darkblue;
+            background: url(lijiayuandekuluomi.gif) no-repeat center center fixed; 
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
         }
 
         .block {
@@ -27,24 +31,46 @@
             background-color: red;
         }
 
-        .yellow {
+        .yellow {	
             background-color: yellow;
         }
 
         .green {
             background-color: green;
         }
+		#btn {
+		            padding: 10px 20px;
+		            font-size: 20px;
+			}
+		#scoreBoard {
+		            position: absolute;
+		            top: 0;
+		            left: 0;
+		            margin: 10px;
+		            font-size: 20px;
+		        }
     </style>
 </head>
 <body>
-    <div style="margin-top: 300px">
+    <div style="margin-top: 500px">
         <p class="center">
-            这&nbsp;是&nbsp;一&nbsp;个&nbsp;网&nbsp;页
+            李&nbsp;佳&nbsp;媛&nbsp;
         </p>
         <div class="center">
             <span class="block red"></span>
             <span class="block yellow"></span>
-            <span class="block green"></span>
+            <span class="block green"></span><br>
+			<button id="btn" onclick ="addScore()" class="red" style="height:100px; width:150px;">
+				点一下李佳媛成绩加一分
+			</button>
+			<div id="scoreBoard" class="red">李佳媛的分数: 0</div>
+			    <script>
+			        let score = 0;
+			        function addScore() {
+			            score++;
+			            document.getElementById('scoreBoard').innerHTML = `李佳媛的分数: ${score}`;
+			        }
+			    </script>
         </div>
     </div>
 </body>
